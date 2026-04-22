@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="infos">
+                <div class="info">
+                    <h3>High Score:
+                        <span id="high-score">0</span>
+                    </h3>
+                </div>
+
+                <div class="info logo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M4 12c0-4 3-7 7-7s7 3 7 7-3 7-7 7" />
+                        <path d="M14 9l3-3 3 3" />
+                    </svg>
+                    <span>SNAKE</span>
+                </div>
+
+                <div class="info">
+                    <h3>Score:
+                        <span id="score">0</span>
+                    </h3>
+                </div>
+                <div class="info">
+                    <h3>Time:
+                        <span id="time">00-00</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="board"></div>
+
+        </section>
+
+        <div class="modal">
+            <div class="start-game modal-box">
+                <div class="modal-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#39ff14"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                        <path d="M8 12h8M12 8v8" />
+                    </svg>
+                </div>
+                <h2>SNAKE</h2>
+                <p class="modal-sub">Use arrow keys to move</p>
+                <button class="btn btn-start">START GAME</button>
+            </div>
+
+            <div class="game-over modal-box">
+                <div class="modal-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b35"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a7 7 0 0 0-7 7c0 3 1.5 5 3 6v2h8v-2c1.5-1 3-3 3-6a7 7 0 0 0-7-7z" />
+                        <line x1="9" y1="19" x2="9" y2="21" />
+                        <line x1="12" y1="19" x2="12" y2="21" />
+                        <line x1="15" y1="19" x2="15" y2="21" />
+                        <circle cx="9" cy="10" r="1.5" fill="#ff6b35" />
+                        <circle cx="15" cy="10" r="1.5" fill="#ff6b35" />
+                    </svg>
+                </div>
+                <h2>GAME OVER</h2>
+                <p class="modal-sub" id="final-score">SCORE: 0</p>
+                <button class="btn btn-restart">PLAY AGAIN</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
