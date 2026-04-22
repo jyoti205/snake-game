@@ -130,6 +130,8 @@ function endGame() {
     clearInterval(timerIntervalId);
     intervalId = null;
 
+    document.getElementById('final-score').innerText = `SCORE: ${score}`;
+
     modal.style.display = "flex";
     startGameModal.style.display = "none";
     gameOverModal.style.display = "flex";
@@ -159,7 +161,7 @@ function restartGame() {
 
 startButton.addEventListener("click", () => {
     modal.style.display = "none";
-    intervalId = setInterval(render, 300);
+    intervalId = setInterval(render, 150);
     startTimer();
 });
 

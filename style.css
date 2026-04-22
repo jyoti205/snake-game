@@ -351,11 +351,11 @@ section {
 }
 
 .touch-btn {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     background: var(--board-bg);
     border: 1px solid var(--neon-dim);
-    border-radius: 8px;
+    border-radius: 6px;
     color: var(--neon);
     display: flex;
     align-items: center;
