@@ -336,3 +336,44 @@ section {
     }
 
 }
+
+.touch-controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 0 4px;
+}
+
+.touch-row {
+    display: flex;
+    gap: 6px;
+}
+
+.touch-btn {
+    width: 56px;
+    height: 56px;
+    background: var(--board-bg);
+    border: 1px solid var(--neon-dim);
+    border-radius: 8px;
+    color: var(--neon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.touch-btn:active {
+    background: var(--neon);
+    color: #000;
+    transform: scale(0.93);
+    box-shadow: var(--snake-glow);
+}
+
+@media (max-width: 768px) {
+    .touch-controls {
+        display: flex;
+    }
+}

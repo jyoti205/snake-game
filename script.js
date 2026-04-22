@@ -173,6 +173,21 @@ addEventListener("keydown", (event) => {
     else if (event.key === 'ArrowUp'    && direction !== 'down')  nextDirection = 'up';
 });
 
+// TOUCH CONTROL
+
+document.getElementById('btn-up').addEventListener('click', () => {
+    if (direction !== 'down') nextDirection = 'up';
+});
+document.getElementById('btn-down').addEventListener('click', () => {
+    if (direction !== 'up') nextDirection = 'down';
+});
+document.getElementById('btn-left').addEventListener('click', () => {
+    if (direction !== 'right') nextDirection = 'left';
+});
+document.getElementById('btn-right').addEventListener('click', () => {
+    if (direction !== 'left') nextDirection = 'right';
+});
+
 
 // Swipe controls
 let touchStartX = 0;
